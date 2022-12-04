@@ -1,5 +1,9 @@
 %include 'yasmmac.inc'
 ;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*
+;Programa išveda tik tas eilutes, kuriose antras laukas neturi  
+;raidžių ‘U’ ir ‘V’,  trečio lauko skaitmenų suma  yra 7, o šeštas
+;laukas yra iš intervalo [2.34, 4.50],[-4.50, -2.34].
+;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*
 org 100h 
 ;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*
 section .kodas 
