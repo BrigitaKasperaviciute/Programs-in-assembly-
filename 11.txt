@@ -1,0 +1,70 @@
+a200
+db 50
+
+a260
+db 'Ivesk teksta' 0D 0A '$'
+
+a100
+mov ah, 09
+mov dx, 260
+int 21
+mov ah, 0A
+mov dx, 200
+int 21
+mov ah, 02
+mov dl, 0d
+int 21
+mov ah, 02
+mov dl, 0a
+int 21
+xor cx, cx
+mov bx, 201
+mov cl, [bx]
+xor ax,ax
+xor dh,dh
+xor di, di
+xor si, si
+inc bx
+mov dl, [bx]
+mov dh, dl
+CMP dl, 41
+JB 13a
+CMP dl, 5a
+JA 13a
+jmp 141
+LOOP 125
+jmp 163
+clc
+shr dh, 1
+cmp di,5
+je 156
+inc di
+cmp di,2
+je 13e
+clc
+shr dh, 1
+jc 153
+jmp 141
+inc si
+jmp 141
+cmp si,2
+je 15d
+jmp 13a
+mov dl, 39
+mov [bx], dl
+jmp 13a
+xor cx,cx
+mov cl, [201]
+mov ah, 02
+mov dl, [bx]
+dec bx
+int 21
+loop 16b
+mov ah, 4c
+int 21
+
+n lab1.com
+r cx
+500
+w
+q
