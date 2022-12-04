@@ -6,7 +6,7 @@ section .kodas
 ;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*
 KodoPradzia:
 ;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*;*
-macPutString 'Brigita Kasperaviciute 1 kursas 2 grupe','$'
+macPutString 'Hi','$'
 macNewLine
    mov di, [DuomFailasNuskaitymui]
    mov bx, 82h
